@@ -63,6 +63,7 @@
 			<src path="${parser.build.dir}" />
 			<compilerarg value="-Xlint:all"/>
 			<classpath path="${lib.dir}/javassist.jar" />
+			<classpath path="${lib.dir}/commons-math3-3.2.jar" />
 		</javac>
 	</target>
 	
@@ -81,7 +82,7 @@
 			basedir="${classes.build.dir}"
 			includes="cz/cuni/mff/d3s/spl/**"
 		>
-			<zipgroupfileset dir="${lib.dir}" includes="**/javassist.jar" />
+			<zipgroupfileset dir="${lib.dir}" includes="**/javassist.jar, **/commons-math3-3.2.jar" />
 			<manifest>
 				<attribute
 					name="Premain-Class"
