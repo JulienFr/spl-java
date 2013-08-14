@@ -63,8 +63,8 @@ public class MeanSorter {
 		
 		StudentizedRangeComputer src2 = new StudentizedRangeComputer();
 		double pValue2FromX = 1.0 - src2.prange(F, r, dfB, 1.0);
-		// checks the null hypothesis
-		if (pValue <= SIGNIFICANCE_LEVEL){
+		// checks if the null hypothesis does not apply
+		if (pValue > SIGNIFICANCE_LEVEL){
 			sortedIndexes = new ArrayList<Integer> ();
 			// compute the critical value Q of the studentized range statistic
 			StudentizedRangeComputer src = new StudentizedRangeComputer();
