@@ -17,6 +17,8 @@ on your machine.
 The compilation is driven by Apache Ant, the target `agent` will build the
 Java agent with the framework that you can attach to your application.
 
+When compiling, set the javacc property of the build.properties to the right path value of your javac compiler.
+
 Executing target `test` will run the provided unit tests, the generated
 report is in `out/test-results/html/index.html`.
 

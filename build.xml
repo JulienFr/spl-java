@@ -16,7 +16,7 @@
   - limitations under the License.
   -->
 <project basedir="." name="SPL" default="main">
-	<property file="local-settings.ini" />
+	<property file="build.properties" />
 	
 	<property name="java.src.dir" value="src/java" />
 	<property name="java.test.src.dir" value="src/test-java" />
@@ -24,7 +24,7 @@
 	
 	<property name="lib.dir" value="lib" />
 	<property name="junit.jar.path" value="lib/junit-4.11.jar" />
-	<property name="javacc.home" value="/usr/share/java/javacc-5.0/" /> <!-- put your own path here (e.g.windows: C:/Program Files (x86)/ -->
+	<property name="javacc.home" value="${javacc}" />
 	
 	<property name="build.dir" value="out" />
 	<property name="classes.build.dir" value="${build.dir}/classes" />
